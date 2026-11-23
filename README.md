@@ -1,5 +1,7 @@
 # マーケット新規タブ（Chrome 拡張）v2
 
+<img width="691" height="520" alt="スクリーンショット 2026-11-23 22 00 45" src="https://github.com/user-attachments/assets/a7e0c8a8-8fbe-451f-be8f-5110b144f33e" />
+
 Chrome の新規タブを、日本の個人投資家向けの金融ダッシュボードに置き換えます。
 設計の詳細は [docs/DESIGN.md](docs/DESIGN.md) を参照してください。
 

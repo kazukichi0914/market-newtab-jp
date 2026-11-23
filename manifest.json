@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "マーケット新規タブ",
+  "version": "2.0.0",
+  "description": "新規タブに日本の金融市場（日経平均・TOPIX・為替・米国株・金利・ウォッチリスト・ポートフォリオ・ニュース）のダッシュボードを表示します。",
+  "minimum_chrome_version": "120",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "alarms"],
+  "host_permissions": [
+    "https://query1.finance.yahoo.com/*",
+    "https://query2.finance.yahoo.com/*",
+    "https://www.mof.go.jp/*",
+    "https://www3.nhk.or.jp/*",
+    "https://news.yahoo.co.jp/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

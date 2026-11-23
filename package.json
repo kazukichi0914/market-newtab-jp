@@ -1,0 +1,11 @@
+{
+  "name": "market-newtab",
+  "private": true,
+  "type": "module",
+  "description": "Chrome 拡張そのものはビルド不要。このファイルはテスト実行（node --test）用です。",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "smoke": "node tests/smoke.mjs",
+    "sim": "node tests/sw-sim.mjs"
+  }
+}
